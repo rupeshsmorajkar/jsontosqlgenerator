@@ -8,7 +8,7 @@ Example:
  	{
  		"id": "-KrqgOLs07ZkbapP4EGi",
  		"category": "vegetables",
- 		"imageUrl": "http://www.publicdomainpictures.net/pictures/170000/velka/spinach-leaves-1461774375kTU.jpg",
+ 		"imageUrl": "http://www.xyz.com/mypic.jpg",
  		"price": 2.5,
  		"title": "Spinach"
  	}
@@ -18,14 +18,14 @@ Example:
 will be converted to ->
 
 INSERT INTO Products ( id, category, imageUrl, price, title ) 
-  VALUES ( "-KrqgOLs07ZkbapP4EGi", "vegetables", "http://www.publicdomainpictures.net/pictures/170000/velka/spinach-leaves-1461774375kTU.jpg", 2.5, "Spinach" );</code>
+  VALUES ( "-KrqgOLs07ZkbapP4EGi", "vegetables", "http://www.xyz.com/mypic.jpg", 2.5, "Spinach" );</code>
 
 
 How To use?
 Program can be executed directly from IDE or by generated JAR file.
 
 JVM Argument - Absolute path of input JSON file.
-java -jar jsontosqlgenerator-0.0.1-SNAPSHOT-jar-with-dependencies.jar <INPUT_JSON_FILE_PATH>
+java -jar jsontosqlgenerator-0.0.1-SNAPSHOT.jar <INPUT_JSON_FILE_PATH>
 
 Important Points:
 1. Component generates queries for one table at a time..
